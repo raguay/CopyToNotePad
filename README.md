@@ -9,7 +9,7 @@ You can install this plugin by pressing `<shift+cmd+p>` to open the command pall
 
 Select a file, press `<cmd> p`, type `copy to notepad`, and press enter. The file will be copied to the notepad that has been setup.
 
-Use the `set notepad number` to set the notepad that notes will be copied to. Use the command `toggle append` to append or overwrite the notepad.
+Use the `set notepad number` to set the notepad that notes will be copied to. Use the command `set notepad append` to append or overwrite the notepad.
 
 ### Features
 
