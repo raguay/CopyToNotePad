@@ -68,7 +68,7 @@ class SetNotePadAppend(DirectoryPaneCommand):
             npdata['number'] = 3
             npdata['save'] = 'a'
         npappend, result = show_prompt(
-            "The NotePad Number to use:")
+            "The 'a'ppend or 'w'rite:")
         if not npappend:
             npappend = 'a'
         npappend = npappend.lower()
