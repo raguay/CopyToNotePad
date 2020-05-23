@@ -15,6 +15,11 @@ class CopyToNotePad(DirectoryPaneCommand):
             if(os.path.exists(file)):
                 contents = ''
                 npdata = load_json('CopyToNotePad.json')
+                if npdata is None:
+                    npdata = dict()
+                    npdata['number'] = 3
+                    npdata['save'] = 'a'
+                    save_json('CopyToNotePad.json', npdata)
                 with open(file, 'r') as content_file:
                     contents = content_file.read()
                 headers = {'Content-Type': 'application/json'}
